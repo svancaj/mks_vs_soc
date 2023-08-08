@@ -258,6 +258,7 @@ void CBS(vector<vector<int> >& map, vector<pair<int,int> >& starts, vector<pair<
 		int found_makespan = 0;
 		float total_time = 0;
 		int found_cost = 0;
+		int solution_depth = 0;
 
 		string line;
 		while (getline(res, line))
@@ -281,6 +282,18 @@ void CBS(vector<vector<int> >& map, vector<pair<int,int> >& starts, vector<pair<
 					parsed_line.push_back(part);
 
 				found_cost = stof(parsed_line[2]);
+			}
+
+			if (line.rfind("Solution depth:", 0) == 0)	// found solution depth
+			{
+				valid_solution = true;
+				stringstream ssline(line);
+				string part;
+				vector<string> parsed_line;
+				while (getline(ssline, part, ' '))
+					parsed_line.push_back(part);
+
+				solution_depth = stof(parsed_line[2]);
 			}
 
 			if (line.rfind("Time In milliseconds:", 0) == 0)	// time of computation
@@ -314,6 +327,7 @@ void CBS(vector<vector<int> >& map, vector<pair<int,int> >& starts, vector<pair<
 			<< agent << "\t"
 			<< found_makespan << "\t"
 			<< found_cost << "\t"
+			<< solution_depth << "\t"
 			<< total_time << endl;
 
 		out.close();
