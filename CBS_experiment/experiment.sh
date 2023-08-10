@@ -1,6 +1,6 @@
 #!/bin/bash
 
-timeout=100
+timeout=300
 
 for instance in instances/scenarios/*.scen
 do
