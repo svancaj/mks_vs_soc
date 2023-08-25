@@ -1,3 +1,6 @@
 [submodule "ASP_experiment"]
 	path = ASP_experiment
 	url = https://github.com/potassco/mapf-subgraph-system.git
+[submodule "SAT_experiment"]
+	path = SAT_experiment
+	url = git@github.com:svancaj/MAPF-encodings.git
