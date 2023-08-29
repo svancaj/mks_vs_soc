@@ -1,0 +1,3 @@
+[submodule "ASP_experiment/mapf_soc"]
+	path = ASP_experiment/mapf_soc
+	url = git@github.com:krr-up/mapf-soc.git
