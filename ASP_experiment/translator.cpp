@@ -1,3 +1,7 @@
+/**************************************************/
+/* compile with: g++ translator.cpp -o translator */
+/**************************************************/
+
 #include <iostream>
 #include <string>
 #include <stdlib.h>
