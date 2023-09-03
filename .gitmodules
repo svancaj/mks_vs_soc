@@ -1,3 +1,6 @@
 [submodule "ASP_experiment/mapf_soc"]
 	path = ASP_experiment/mapf_soc
 	url = git@github.com:krr-up/mapf-soc.git
+[submodule "SAT_experiment"]
+	path = SAT_experiment
+	url = git@github.com:svancaj/MAPF-encodings.git
